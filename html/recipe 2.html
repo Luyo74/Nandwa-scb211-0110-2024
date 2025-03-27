@@ -1,0 +1,221 @@
+<html>
+
+<head>
+    <title>
+        Chicken Pot Pie
+    </title>
+    <style>
+        /* General Styles */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Full viewport height */
+            margin: 0;
+            background-color: rgb(32, 30, 30); /* Red background */
+            font-family: 'Arial', sans-serif; /* Font */
+            color: #2b097a; /* White text for contrast */
+        }
+
+        /* Header Styling */
+        header {
+            width: 100%;
+            background-color: #a50d0d; /* Dark red background */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Styling */
+        section {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: #333; /* Dark text for readability */
+        }
+
+        /* Image Styling */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        figcaption {
+            text-align: left;
+            font-style: italic;
+            color: brown;
+            margin-top: 5px;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            text-align: center;
+            color: white; /* White headings for contrast */
+        }
+
+        p, ul, ol, dl {
+            line-height: 1.6;
+            font-size: 16px;
+            color: white; /* White text for contrast */
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        a {
+            color: #ffdd57; /* Yellow links */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffd700; /* Brighter yellow on hover */
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            padding: 10px 0;
+            background-color: #a50d0d; /* Dark red background */
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffd700;
+        }
+
+        /* Buttons */
+        button, .btn {
+            background-color: #28a745; /* Green */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover, .btn:hover {
+            background-color: #218838; /* Darker green */
+        }
+
+        /* Back to Top Button */
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #e75a08;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        #backToTop:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            section {
+                width: 100%;
+                padding: 15px;
+            }
+
+            h1, h2, h3 {
+                font-size: 20px;
+            }
+
+            p, ul, ol {
+                font-size: 14px;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <img src="C:\Users\HP FOLIO\Desktop\html\images\Pot pie.jpg" alt="Chicken Pot Pie" width="300" height="400" loading="lazy">
+        <figcaption>Chicken pot pie</figcaption>
+    </p>
+
+    <h2><strong>Ingredients</strong></h2>
+    <h3><strong><em>For the filling</em></strong></h3>
+    <p>
+    <ul>
+        <li>2 cups cooked chicken, shredded</li>
+        <li>1 cup mixed vegetables (peas, carrots, corn)</li>
+        <li>1 small onion, chopped</li>
+        <li>2 cloves garlic, minced</li>
+        <li>2 tbsp butter</li>
+        <li>2 tbsp all-purpose flour</li>
+        <li>1 cup chicken broth</li>
+        <li>½ cup heavy cream (or milk)</li>
+        <li>½ tsp salt</li>
+        <li>½ tsp black pepper</li>
+        <li>½ tsp thyme (optional)</li>
+    </ul>
+    </p>
+
+    <h3><strong><em>For the crust</em></strong></h3>
+    <p>
+        <ul>
+            <li>2 premade pie crusts (or homemade)</li>
+            <li>1 egg (for egg wash)</li>
+        </ul>
+    </p>
+
+    <h2><strong>Instructions</strong></h2>
+    <ol>
+        <li>Preheat Oven - set your oven to 190&deg;C.</li>
+        <li>Prepare the filling:</li>
+    </ol>
+    <ul>
+        <li>In a pan, melt butter over medium heat. Sauté onions and garlic until soft.</li>
+        <li>Add flour and stir for 1 minute.</li>
+        <li>Gradually pour in chicken broth while stirring to avoid lumps.</li>
+        <li>Add heavy cream, salt, pepper, and thyme. Let it simmer until thickened.</li>
+        <li>Stir in cooked chicken and vegetables. Remove from heat and let cool slightly.</li>
+    </ul>
+
+    <a href="#" id="backToTop">Back to Top</a>
+    <a href="index.html" id="backToHome">Home</a>
+    <hr>
+    <footer>
+        &lt;&lt;&lt;&lt;&lt;&copy;<a href="Eugo/about.html">Eugene Nandwa</a>&gt;&gt;&gt;&gt;&gt;
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<html>
+    <h2>My Favorite Meal: Rice and beef stew</h2>
+    <img src="C:\Users\HP FOLIO\Desktop\html\images\Rice beef.jpg" alt="Rice and beef stew">
+    <style> 
+        /* General Styles */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Full viewport height */
+            margin: 0;
+            background-color: black; /* Black background */
+            font-family: 'Arial', sans-serif; /* Font */
+            color: #fff; /* White text for contrast */
+        }
+
+        /* Header Styling */
+        header {
+            width: 100%;
+            background-color: #007bff; /* Blue background */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #112841; /* Dark blue background */
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #492121; /* Dark red text */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffdd57; /* Yellow on hover */
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('images/hero.jpg') no-repeat center center/cover; /* Replace with your image */
+            color: #3d0202; /* Dark red text */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            margin: 20px 0;
+            width: 90%;
+            max-width: 1200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background-color: #28a745; /* Green button */
+            color: #e7a1a1; /* Light pink text */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #218838; /* Darker green */
+        }
+
+        /* Section Styling */
+        section {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333; /* Dark gray background for sections */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: #fff; /* White text for readability */
+        }
+
+        section h2 {
+            text-align: center;
+            color: #ffdd57; /* Yellow headings */
+            margin-bottom: 20px;
+        }
+
+        section p, section ul {
+            line-height: 1.6;
+            font-size: 16px;
+            color: #fff; /* White text */
+        }
+
+        section ul {
+            padding-left: 20px;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Image Styling */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        figcaption {
+            text-align: center;
+            font-style: italic;
+            color: #ffdd57; /* Yellow text for captions */
+            margin-top: 5px;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #fff; /* White text */
+            font-size: 14px;
+            padding: 10px 0;
+            background-color: #333; /* Dark gray background */
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            color: #ffdd57; /* Yellow links */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffd700; /* Brighter yellow on hover */
+        }
+
+        /* Buttons */
+        button, .btn {
+            background-color: #28a745; /* Green button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover, .btn:hover {
+            background-color: #218838; /* Darker green */
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero, section {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Back to Top Button */
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        #backToTop:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            nav a {
+                font-size: 16px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            section {
+                width: 100%;
+                padding: 15px;
+            }
+
+            section h2 {
+                font-size: 20px;
+            }
+
+            section p, section ul {
+                font-size: 14px;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+    <figcaption>
+        Rice and Beef stew
+    </figcaption>
+    
+    <h3>Ingredients:</h3>
+    <ul>
+        <li>Pishori rice</li>
+        <li>Ground beef</li>
+        <li>Tomato sauce</li>
+        <li>Garlic, onion, olive oil</li>
+    </ul>
+
+    <h3>Instructions:</h3>
+    <ol>
+        <li>Cook Pishori rice in boiling water.</li>
+        <li>Sauté garlic and onions, then add ground beef.</li>
+        <li>Pour in tomato sauce and simmer.</li>
+        <li>Mix with cooked Pishori rice and serve.</li>
+    </ol>
+    <footer>
+        <a href="recipe 2.html">chicken pot pie</a>
+        &lt;&lt;&lt;&lt;&lt;&copy;<a href="about.html">Eugene Nandwa</a>&gt;&gt;&gt;&gt;&gt;
+    </footer>
+</html>
